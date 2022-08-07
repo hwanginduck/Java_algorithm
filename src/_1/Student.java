@@ -23,7 +23,4 @@ public class Student {
 		this.no = no;
 	}
 	
-	
-	
-	
 }
