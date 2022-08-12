@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class Expense_List {
 
+	Expense_Board expense_Board = new Expense_Board();
 	//입력 목록 출력
-	public static void ExpenseListView(Scanner sc) {
-		BoardSVC input = new BoardSVC();
+	public void Expense_List_view(Scanner sc) {
+		//Expense_Board ExpenceWrite = new Expense_Board();
 		
-		if((input.boardList.size())>0) {
-			for(int i=0; i<input.boardList.size(); i++) {
-				System.out.println(input.boardList.get(i).toString());
+		
+		if(expense_Board.boardList.size()>0) {
+			for(int i=0; i<expense_Board.boardList.size(); i++) {
+				System.out.println(expense_Board.boardList.get(i).toString());
 			}
 		}else {
 			System.out.println("등록된 내역이 없습니다.");

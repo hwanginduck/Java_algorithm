@@ -3,16 +3,16 @@ package toy_project;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BoardSVC {
+public class Expense_Board {
 	
 	ArrayList<insert> boardList;
 	
-	public BoardSVC() {
+	public Expense_Board() {
 		boardList = new ArrayList<insert>();
 	}
 	
 	//입력 처리 메소드
-	public void ExpenceWrite(Scanner sc) {
+	public void ExpenseWrite(Scanner sc) {
 		
 		System.out.println("안내에 따라 입력하세요");
 		System.out.println("ID를 입력하세요.");

@@ -11,8 +11,10 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		BoardSVC boardSVC = new BoardSVC();
-		Expense_List ExpenseListView = new Expense_List();
+		//입력
+		Expense_Board expense_Board = new Expense_Board();
+		//조회
+		Expense_List expense_List = new Expense_List();
 		
 		
 		do {
@@ -31,17 +33,17 @@ public class Main {
 			
 			switch(menu) {
 			
-			case "1" : boardSVC.ExpenceWrite(sc);
+			case "1" : expense_Board.ExpenseWrite(sc);
 			break;
-			case "2" : boardSVC.ExpenceWrite(sc);
+			case "2" : expense_Board.ExpenseWrite(sc);
 			break;
-			case "3" : boardSVC.ExpenceWrite(sc);
+			case "3" : expense_Board.ExpenseWrite(sc);
 			break;
-			case "4" : boardSVC.ExpenceWrite(sc);
+			case "4" : expense_Board.ExpenseWrite(sc);
 			break;
-			case "5" : Expense_List.ExpenseListView(sc);
+			case "5" : expense_List.Expense_List_view(sc);
 			break;
-			case "6" : boardSVC.ExpenceWrite(sc);
+			case "6" : expense_Board.ExpenseWrite(sc);
 			break;
 			case "7" : isStop = true;
 			
