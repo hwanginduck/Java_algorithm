@@ -12,6 +12,8 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		BoardSVC boardSVC = new BoardSVC();
+		Expense_List ExpenseListView = new Expense_List();
+		
 		
 		do {
 			System.out.println("원하는 메뉴를 입력하세요");
@@ -37,7 +39,7 @@ public class Main {
 			break;
 			case "4" : boardSVC.ExpenceWrite(sc);
 			break;
-			case "5" : boardSVC.ExpenseListView(sc);
+			case "5" : Expense_List.ExpenseListView(sc);
 			break;
 			case "6" : boardSVC.ExpenceWrite(sc);
 			break;

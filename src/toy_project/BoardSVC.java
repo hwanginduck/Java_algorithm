@@ -47,17 +47,5 @@ public class BoardSVC {
 	//입력
 	public void addAction(insert insert) {
 		boardList.add(insert);
-	}
-	//입력 목록 출력
-	public void ExpenseListView(Scanner sc) {
-		if(boardList.size()>0) {
-			for(int i=0; i<boardList.size(); i++) {
-				System.out.println(boardList.get(i).toString());
-			}
-		}else {
-			System.out.println("등록된 내역이 없습니다.");
-		}
-	}
-
-	
+	}	
 }
